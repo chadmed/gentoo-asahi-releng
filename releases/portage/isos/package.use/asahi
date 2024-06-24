@@ -1,0 +1,5 @@
+# Rust for Linux requirements
+dev-lang/rust-bin rustfmt rust-src
+
+# Prevent asahi-meta from pulling useless stuff
+sys-apps/asahi-meta -audio -mesa

@@ -1,0 +1,2 @@
+# Rust for Linux requirements
+dev-lang/rust-bin rustfmt rust-src
