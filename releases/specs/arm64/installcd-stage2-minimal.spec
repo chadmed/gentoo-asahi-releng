@@ -6,19 +6,19 @@ profile: default/linux/arm64/23.0
 snapshot_treeish: @TREEISH@
 source_subpath: 23.0-default/livecd-stage1-arm64-@TIMESTAMP@.tar.xz
 portage_confdir: @REPO_DIR@/releases/portage/isos
+repos: @ASAHIOVERLAY@ # Clone chadmed/asahi-overlay (GitHub) and point this to it
 
 livecd/bootargs: dokeymap
 livecd/fstype: squashfs
-livecd/gk_mainargs: --all-ramdisk-modules --firmware
-livecd/iso: install-arm64-minimal-@TIMESTAMP@.iso
+livecd/iso: install-arm64-asahi-@TIMESTAMP@.iso
 livecd/type: gentoo-release-minimal
 livecd/volid: Gentoo-arm64-@TIMESTAMP@
 
-boot/kernel: gentoo
+boot/kernel: asahi
 
-boot/kernel/gentoo/distkernel: yes
-boot/kernel/gentoo/dracut_args: --xz --no-hostonly -a dmsquash-live -a dmsquash-live-ntfs -a mdraid -o btrfs -o crypt -o i18n -o usrmount -o lunmask -o qemu -o qemu-net -o nvdimm -o multipath -o zfs -i /lib/keymaps /lib/keymaps -I busybox
-boot/kernel/gentoo/packages: --usepkg n zfs zfs-kmod
+boot/kernel/asahi/distkernel: yes
+boot/kernel/asahi/sources: sys-kernel/asahi-kernel
+boot/kernel/asahi/dracut_args: --xz --no-hostonly -a dmsquash-live -o btrfs -o i18n -o usrmount -o lunmask -o multipath -i /lib/keymaps /lib/keymaps -I busybox
 
 livecd/unmerge:
 	app-admin/eselect
@@ -62,6 +62,8 @@ livecd/unmerge:
 	sys-libs/gdbm
 	sys-kernel/genkernel
 	sys-kernel/linux-headers
+	dev-util/bindgen
+	dev-lang/rust-bin
 
 livecd/empty:
 	/boot
