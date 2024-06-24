@@ -1,2 +1,0 @@
-# required by sys-devel/clang-common for clang stage1
-sys-libs/llvm-libunwind static-libs
