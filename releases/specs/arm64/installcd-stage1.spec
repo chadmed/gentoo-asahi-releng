@@ -7,6 +7,7 @@ snapshot_treeish: @TREEISH@
 source_subpath: 23.0-default/stage3-arm64-openrc-@TIMESTAMP@.tar.xz
 compression_mode: pixz
 portage_confdir: @REPO_DIR@/releases/portage/isos
+repos: @ASAHIOVERLAY@ # Clone chadmed/asahi-overlay (GitHub) and point this to it
 
 livecd/use:
 	alsa
@@ -103,3 +104,14 @@ livecd/packages:
 	sys-libs/gpm
 	sys-power/acpid
 	www-client/links
+	# Asahi packages from ::gentoo
+	sys-fs/squashfs-tools
+	dev-util/bindgen
+	dev-lang/rust-bin
+	app-portage/gentoolkit
+	# Asahi packages from ::asahi
+	sys-apps/asahi-configs
+	sys-apps/asahi-scripts
+	sys-firmware/asahi-firmware
+	sys-boot/m1n1
+	sys-boot/u-boot
