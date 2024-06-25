@@ -113,5 +113,3 @@ livecd/packages:
 	sys-apps/asahi-configs
 	sys-apps/asahi-scripts
 	sys-firmware/asahi-firmware
-	sys-boot/m1n1
-	sys-boot/u-boot
