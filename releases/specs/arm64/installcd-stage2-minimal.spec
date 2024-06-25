@@ -12,7 +12,7 @@ livecd/bootargs: dokeymap
 livecd/fstype: squashfs
 livecd/iso: install-arm64-asahi-@TIMESTAMP@.iso
 livecd/type: gentoo-release-minimal
-livecd/volid: Gentoo Asahi arm64 @TIMESTAMP@
+livecd/volid: Gentoo_Asahi_arm64_@TIMESTAMP@
 
 boot/kernel: asahi
 
