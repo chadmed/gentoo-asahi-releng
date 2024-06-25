@@ -1,2 +1,3 @@
 dev-util/bindgen ~arm64
 sys-kernel/asahi-kernel ~arm64
+virtual/dist-kernel ~arm64
