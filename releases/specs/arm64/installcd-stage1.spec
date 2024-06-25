@@ -4,7 +4,7 @@ version_stamp: @TIMESTAMP@
 rel_type: 23.0-default
 profile: default/linux/arm64/23.0
 snapshot_treeish: @TREEISH@
-source_subpath: 23.0-default/stage3-arm64-openrc-@TIMESTAMP@.tar.xz
+source_subpath: @STAGE3_PATH@
 compression_mode: pixz
 portage_confdir: @REPO_DIR@/releases/portage/isos
 repos: @ASAHIOVERLAY@ # Clone chadmed/asahi-overlay (GitHub) and point this to it
