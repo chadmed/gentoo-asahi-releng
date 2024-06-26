@@ -4,7 +4,7 @@ target: livecd-stage2
 rel_type: 23.0-default
 profile: default/linux/arm64/23.0
 snapshot_treeish: @TREEISH@
-source_subpath: @STAGE3_PATH@
+source_subpath: 23.0-default/livecd-stage1-arm64-@TIMESTAMP@.tar.xz
 portage_confdir: @REPO_DIR@/releases/portage/isos
 repos: @ASAHIOVERLAY@ # Clone chadmed/asahi-overlay (GitHub) and point this to it
 
