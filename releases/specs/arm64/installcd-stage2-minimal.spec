@@ -64,6 +64,8 @@ livecd/unmerge:
 	sys-kernel/linux-headers
 	dev-util/bindgen
 	dev-lang/rust-bin
+	sys-devel/llvm
+	sys-devel/clang
 
 livecd/empty:
 	/boot
