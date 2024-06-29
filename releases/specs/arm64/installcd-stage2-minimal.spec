@@ -66,6 +66,8 @@ livecd/unmerge:
 	dev-util/bindgen
 	dev-lang/rust-bin
 	virtual/rust
+	sys-devel/llvm
+	sys-devel/clang
 
 livecd/empty:
 	/boot
