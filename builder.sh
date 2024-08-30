@@ -6,12 +6,13 @@
 : ${BUILDDIR:="${BASEDIR}/builds"}
 : ${VER:=$(date +'%Y%m%d')}
 : ${GENTOO_MIRROR:="https://mirror.aarnet.edu.au/pub/gentoo/"}
+: ${DESTDIR:="/path/to/dest"}
 
 echo "Trying to enter ${BASEDIR}..."
 cd "${BASEDIR}"
 
 echo "Cleaning out ${BASEDIR}..."
-#rm -rf "${BASEDIR}"/*
+rm -rf "${BASEDIR}"/*
 
 echo "Cloning Gentoo Asahi releng files..."
 git clone https://github.com/chadmed/gentoo-asahi-releng \
@@ -65,3 +66,9 @@ catalyst -f installcd-stage1.spec
 
 echo "Building stage2 ISO..."
 catalyst -f installcd-stage2-minimal.spec
+
+cp -r "${BASEDIR}"/builds/23.0-default/install-arm64-asahi-"${VER}".i* "${DESTDIR}"/.
+ln -sf "${DESTDIR}/install-arm64-asahi-${VER}.iso" "${DESTDIR}/install-arm64-asahi-latest.iso"
+ln -sf "${DESTDIR}/install-arm64-asahi-${VER}.iso.sha256" "${DESTDIR}/install-arm64-asahi-latest.iso.sha256"
+ln -sf "${DESTDIR}/install-arm64-asahi-${VER}.iso.CONTENTS.gz" "${DESTDIR}/install-arm64-asahi-latest.iso.CONTENTS.gz"
+ln -sf "${DESTDIR}/install-arm64-asahi-${VER}.iso.DIGESTS" "${DESTDIR}/install-arm64-asahi-latest.iso.DIGESTS"
