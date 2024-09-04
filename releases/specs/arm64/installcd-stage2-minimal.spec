@@ -18,7 +18,7 @@ boot/kernel: asahi
 
 boot/kernel/asahi/distkernel: yes
 boot/kernel/asahi/sources: sys-kernel/asahi-kernel
-boot/kernel/asahi/dracut_args: --xz --no-hostonly -a dmsquash-live -o btrfs -o i18n -o usrmount -o lunmask -o multipath -i /lib/keymaps /lib/keymaps -I busybox
+boot/kernel/asahi/dracut_args: --xz --no-hostonly -a kernel-modules-asahi -a asahi-firmware -a dmsquash-live -o btrfs -o i18n -o usrmount -o lunmask -o multipath -i /lib/keymaps /lib/keymaps -I busybox
 
 livecd/unmerge:
 	app-admin/eselect
