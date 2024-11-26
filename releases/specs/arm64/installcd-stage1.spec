@@ -55,7 +55,6 @@ livecd/packages:
 	net-misc/rdate
 	net-misc/rsync
 	#net-misc/vconfig # needs stable
-	net-proxy/dante
 	#net-proxy/tsocks # needs stable
 	net-wireless/b43-fwcutter
 	net-wireless/iw
