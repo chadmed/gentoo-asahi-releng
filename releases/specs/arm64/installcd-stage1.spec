@@ -107,7 +107,6 @@ livecd/packages:
 	sys-fs/squashfs-tools
 	dev-util/bindgen
 	dev-lang/rust-bin
-	virtual/rust
 	app-portage/gentoolkit
 	# Asahi packages from ::asahi
 	sys-apps/asahi-configs

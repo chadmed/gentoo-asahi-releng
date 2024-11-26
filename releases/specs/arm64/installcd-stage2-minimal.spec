@@ -65,7 +65,6 @@ livecd/unmerge:
 	sys-kernel/linux-headers
 	dev-util/bindgen
 	dev-lang/rust-bin
-	virtual/rust
 	sys-devel/llvm
 	sys-devel/clang
 
