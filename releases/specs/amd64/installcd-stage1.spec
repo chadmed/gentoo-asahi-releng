@@ -31,7 +31,7 @@ livecd/packages:
 	app-arch/dpkg
 	app-arch/gzip
 	app-arch/mt-st
-	app-arch/p7zip
+	app-arch/7zip
 	app-arch/pbzip2
 	app-arch/tar
 	app-arch/unrar
