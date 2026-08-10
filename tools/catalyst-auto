@@ -257,7 +257,7 @@ verify_dnssec() {
 	[[ ${nonetwork} == 0 ]] || return
 
 	which dig >/dev/null || {
-		echo "net-dns/bind-tools is needed to verify DNSSEC is working"
+		echo "net-dns/bind is needed to verify DNSSEC is working"
 		exit 1
 	}
 

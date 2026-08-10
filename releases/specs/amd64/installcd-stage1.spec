@@ -80,7 +80,7 @@ livecd/packages:
 	net-dialup/minicom
 	net-dialup/pptpclient
 	net-dialup/rp-pppoe
-	net-dns/bind-tools
+	net-dns/bind
 	net-fs/cifs-utils
 	net-fs/nfs-utils
 	net-ftp/ftp
