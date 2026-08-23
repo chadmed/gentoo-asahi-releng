@@ -159,9 +159,9 @@ livecd/rm:
 	/etc/hosts.bck
 	/etc/issue*
 	/etc/genkernel.conf
-	/etc/make.conf*
-	/etc/make.globals
-	/etc/make.profile
+	/etc/portage/make.conf*
+	/etc/portage/make.globals
+	/etc/portage/make.profile
 	/etc/man.conf
 	/etc/resolv.conf
 	/usr/lib*/*.a
